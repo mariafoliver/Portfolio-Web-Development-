@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Maria Fernanda | Portfolio</title>
+  <style>
+    /* ===== Reset e Corpo ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Helvetica', sans-serif;
+      background-color: #404040;
+      color: white;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* ===== Navbar ===== */
+    nav {
+      background-color: #333;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #f8cdd3;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .menu li a:hover {
+      color: #fff;
+      border-bottom: 2px solid #f8cdd3;
+      padding-bottom: 3px;
+    }
+
+    /* ===== Container Principal ===== */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 50px;
+      padding: 0 20px;
+    }
+
+    .container img {
+      border-radius: 100px;
+      width: 200px;
+      height: 200px;
+      transition: all 0.3s;
+    }
+
+    .container img:hover {
+      transform: scale(1.1);
+      opacity: 0.7;
+      transform: scale(1.1);        /* zoom */
+      border: 6px solid #FFCCFF;    /* borda rosa aparece */
+      cursor: pointer;
+    }
+
+    /* ===== Efeito Digitação ===== */
+    .digitando {
+      font-family: monospace;
+      font-size: 28px;
+      color: white;
+      border-right: 3px solid pink;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(20, end) forwards, blink 0.7s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 14ch; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    /* ===== Separador ===== */
+    .separator {
+      border: none;
+      height: 3px;
+      background: linear-gradient(to right, #ffccff, #ff99cc, #ff66aa);
+      margin: 30px auto;
+      width: 60%;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(255, 204, 255, 0.5);
+    }
+
+    /* ===== Info Box ===== */
+    .info-box {
+      border: 2px solid #FFCCFF;
+      border-radius: 12px;
+      padding: 25px 20px;
+      margin: 30px auto;
+      max-width: 700px;
+      background-color: rgba(255, 255, 255, 0.05);
+      font-size: 18px;
+      text-align: justify;
+      color: white;
+    }
+   
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre mim</a></li>
+      <li><a href="#">Projetos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Container Principal -->
+  <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStqTBK8Sp_4EbskvCL8erAsVGH76a2bpZqBw&s" alt="Foto Maria">
+    <h1 class="digitando">Hi, I'm Maria.</h1>
+    <hr class="separator">
+
+</body>
+</html>
