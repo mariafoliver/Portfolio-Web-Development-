@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Maria Fernanda | Portfolio</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre mim</a></li>
+      <li><a href="#">Projetos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Container Principal -->
+  <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStqTBK8Sp_4EbskvCL8erAsVGH76a2bpZqBw&s" alt="Foto Maria">
+    <h1 class="digitando">Hi, I'm Maria.</h1>
+    <hr class="separator">
+
+</body>
+</html>
